@@ -1,4 +1,5 @@
 ﻿using APIProyectoFinal.Model;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace APIProyectoFinal.Repository
@@ -82,7 +83,7 @@ namespace APIProyectoFinal.Repository
         }//modificado
         public  static bool UpdateUsuario(Usuario usuario)
         {
-            string queryUpdate = "update Usuario set NombreUsuario = @nuevoNombreUsuario where Id = @idUsuario";
+            string queryUpdate = "update Usuario set NombreUsuario = @nombreUsuario where Id = @idUsuario";
             using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
                 {
                 bool result = false;
@@ -151,6 +152,6 @@ namespace APIProyectoFinal.Repository
             }
            
         }
-
     }
+
 }

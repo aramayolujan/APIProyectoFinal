@@ -33,7 +33,7 @@ namespace APIProyectoFinal.Controllers
                     Nombre = usuario.Nombre,
                     Apellido = usuario.Apellido,
                     NombreUsuario = usuario.NombreUsuario,
-                    Contraseña = usuario.Contrasena,
+                    Contraseña = usuario.Contraseña,
                     Mail = usuario.Mail,
                     Id = usuario.Id
                 });
